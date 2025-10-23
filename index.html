@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="ESTILO/style.css">
+</head>
+
+<body>
+   <header class="header">
+    <div class="header--max-whidth">
+        <nav class="header_links">
+            <div class="header_logo">
+                <img src="imagens/logo.png" alt="">
+            </div>
+
+            <ul class="header_listas" id="menu">
+                <li><a href="#hero">SEÇÃO1</a></li>
+                <li><a href="#cuidados">SEÇÃO2</a></li>
+                <li><a href="#oceano">SEÇÃO3</a></li>
+                <li><a href="#cards">SEÇÃO4</a></li>
+            </ul>
+
+            <!-- Botão hambúrguer -->
+            <div class="header_mobile" id="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+    <main class="main">
+        <section class="hero" id="hero">
+            <div class="hero_conteudo">
+                <h1>EXPLORE O <span>VASTO</span> OCEANO</h1>
+                <p>
+                    Mergulhe em diferentes especies de animais e obtenha um incrivel conhecimento
+                </p>
+
+                <a href="#">EXPLORAR</a>
+
+            </div>
+        </section>
+
+
+        <section class="Cuidados_oceano" id="cuidados">
+            <div class="Cuidados_oceano__alinhamento">
+                <h1 class="Cuidados_oceano__title">CUIDADOS COM O <span>OCEANO</span></h1>
+                <p class="Cuidados_oceano__text">
+                    O oceano é essencial para nossa sobrevivência, fornecendo oxigênio e regulando o clima. Contudo,
+                    enfrenta sérias ameaças, como a poluição por plástico e a pesca predatória. Proteger os mares é
+                    dever de todos – reduza seu consumo de plástico e apoie a pesca sustentável para garantir a saúde
+                    marinha das futuras gerações.
+                </p>
+            </div>
+            <img src="/imagens/Primeira.png" alt="peixes" class="Cuidados_oceano__imagem">
+        </section>
+
+
+        <section class="azul_oceano" id="oceano">
+                 <img src="imagens/baleia.png" alt="peixes" class="azul_oceano__imagem">
+            <div class="azul_oceano__alinhamento">
+                <h1 class="azul_oceano__title">O OCEANO <span>AZUL</span></h1>
+                <p class="azul_oceano__text">
+             
+Oceano é a base da vida, cobrindo 70% do planeta. Ele é o principal produtor do oxigênio que respiramos e o grande regulador do clima. Sua vasta profundidade abriga uma biodiversidade incrível. Proteger este mundo azul é crucial para a sobrevivência e o futuro de toda a Terra.   
+                </p>
+            </div>
+       
+        </section>
+
+
+        <section>
+            <div class="container-azul">
+                <div class="card">
+                    <img src="imagens/unnamed 4.png" alt="">
+                    <div class="azul-content">
+                        <h3>card 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, non.
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/unnamed 4.png" alt="">
+                    <div class="azul-content">
+                        <h3>card 2</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, non.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/unnamed 4.png" alt="">
+                    <div class="azul-content">
+                        <h3>card 3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, non.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imagens/unnamed 4.png" alt="">
+                    <div class="azul-content">
+                        <h3>card 3</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, non.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+    const hamburguer = document.getElementById('hamburguer');
+    const menu = document.getElementById('menu');
+
+    hamburguer.addEventListener('click', () => {
+        hamburguer.classList.toggle('ativo');
+        menu.classList.toggle('ativo');
+    });
+
+    // Fecha o menu ao clicar em um link
+    document.querySelectorAll('.header_listas a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburguer.classList.remove('ativo');
+            menu.classList.remove('ativo');
+        });
+    });
+</script>
+
+</body>
+
+</html>
